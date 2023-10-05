@@ -9,8 +9,9 @@ function App() {
   return (
     <>
       <Header></Header>
-      <Button></Button>
+      <Button>Sort By Date</Button>
       <Card></Card>
+      {/* <Button>See More</Button> */}
     </>
   )
 }
