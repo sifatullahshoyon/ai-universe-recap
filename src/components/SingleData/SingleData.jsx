@@ -2,7 +2,6 @@ import React from "react";
 import Button from "../Button/Button";
 
 const SingleData = (props) => {
-  // console.log(props)
   const {id , image, name, features, published_in} = props.singleData;
   return (
     <>
