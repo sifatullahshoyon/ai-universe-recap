@@ -2,7 +2,8 @@ import React from "react";
 import Button from "../Button/Button";
 
 const SingleData = (props) => {
-  const { image, name, features, published_in } = props.singleData;
+  // console.log(props)
+  const {id , image, name, features, published_in} = props.singleData;
   return (
     <>
       <div className="mb-12">
@@ -43,7 +44,7 @@ const SingleData = (props) => {
                 </svg>
                 <p className="ml-2">{published_in}</p>
               </div>
-              <div onClick={()=>document.getElementById('my_modal_4').showModal()}>
+              <label onClick={()=> props?.setUniqueId(id)} htmlFor="my_modal_6" className="cursor-pointer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -58,7 +59,7 @@ const SingleData = (props) => {
                     d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
                   />
                 </svg>
-              </div>
+              </label>
             </div>
           </div>
         </div>
